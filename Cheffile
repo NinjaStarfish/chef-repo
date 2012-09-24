@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
 
 site 'http://community.opscode.com/api/v1' 
+
+cookbook 'chef-client'
+cookbook 'chef-server'
+
+cookbook 'bind9',
+  :git => 'https://github.com/NinjaStarfishUK/cookbook-bind9'
