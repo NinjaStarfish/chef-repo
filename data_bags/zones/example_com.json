@@ -1,0 +1,82 @@
+{
+  "id": "example_com",
+  "production": {
+    "domain": "example.com",
+    "type": "master",
+    "allow_transfer": [ "4.4.4.4",
+                        "8.8.8.8" ],
+    "zone_info": {
+      "global_ttl": 300,
+      "soa": "ns.example.com.",
+      "contact": "webmaster.example.com.",
+      "serial": 2011091402,
+      "nameserver": [ "ns.example.net.",
+                      "ns.friendlyweb.co.uk.",
+                      "ns.ninjastarfish.co.uk." ],
+      "mail_exchange": [{
+        "host": "ASPMX.L.GOOGLE.COM.",
+        "priority": 10
+      },{
+        "host": "ALT1.ASPMX.L.GOOGLE.COM.",
+        "priority": 20
+      },{
+        "host": "ALT2.ASPMX.L.GOOGLE.COM.",
+        "priority": 20
+      },{
+        "host": "ASPMX2.GOOGLEMAIL.COM.",
+        "priority": 30
+      },{
+        "host": "ASPMX3.GOOGLEMAIL.COM.",
+        "priority": 30
+      },{
+        "host": "ASPMX4.GOOGLEMAIL.COM.",
+        "priority": 30
+      },{
+        "host": "ASPMX5.GOOGLEMAIL.COM.",
+        "priority": 30
+      }],
+      "records": [{
+        "name": "example.com.",
+        "type": "A",
+        "ip": "192.0.43.10"
+      },{
+        "name": "www",
+        "type": "CNAME",
+        "ip": "example.com"
+      },{
+        "name": "me",
+        "type": "A",
+        "ip": "127.0.0.1"
+      },{
+        "name": "mail",
+        "type": "CNAME",
+        "ip": "ghs.google.com."
+      }]
+    }
+  },
+  "development": {
+    "domain": "example.com",
+    "type": "master",
+    "allow_transfer": [ "" ],
+    "zone_info": {
+      "global_ttl": 30,
+      "soa": "localhost.",
+      "contact": "webmaster.example.com.",
+      "serial": 2011091402,
+      "nameserver": [ "localhost." ],
+      "mail_exchange": [{
+        "host": "localhost.",
+        "priority": 0
+      }],
+      "records": [{
+        "name": "example.com.",
+        "type": "A",
+        "ip": "127.0.0.1"
+      },{
+        "name": "www",
+        "type": "CNAME",
+        "ip": "example.com"
+      }]
+    }
+  }
+}
