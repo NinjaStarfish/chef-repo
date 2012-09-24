@@ -1,0 +1,15 @@
+{
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "name": "production",
+  "description": "Production environment",
+  "cookbook_versions": {
+    
+  },
+  "default_attributes": {
+    
+  },
+  "override_attributes": {
+    
+  }
+}
