@@ -1,0 +1,17 @@
+{
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "name": "dns-server",
+  "automatic": {
+  },
+  "chef_environment": "production",
+  "default": {
+  },
+  "normal": {
+  },
+  "override": {
+  },
+  "run_list": [
+    "recipe[bind9]"
+  ]
+}

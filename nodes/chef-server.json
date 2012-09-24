@@ -1,0 +1,17 @@
+{
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "name": "chef-server",
+  "automatic": {
+  },
+  "chef_environment": "production",
+  "default": {
+  },
+  "normal": {
+  },
+  "override": {
+  },
+  "run_list": [
+    "recipe[chef-server]"
+  ]
+}
